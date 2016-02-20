@@ -5,15 +5,16 @@
 
 Summary:	lxqt-qtplugin
 Name:		lxqt-qtplugin
-Version:	0.8.0
-Release:	0.2
+Version:	0.10.0
+Release:	1
 License:	GPLv2 and LGPL-2.1+
 Group:		X11/Applications
-Source0:	http://lxqt.org/downloads/lxqt/%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	eac15139d7d0732592ac00a225ed7cfc
+Source0:	http://downloads.lxqt.org/lxqt/%{version}/%{name}-%{version}.tar.xz
+# Source0-md5:	f16426b72cbb78211714a5e08dd15665
 URL:		http://www.lxqt.org/
 BuildRequires:	cmake >= 2.8.3
-BuildRequires:	liblxqt-devel >= 0.7.0
+BuildRequires:	libdbusmenu-qt5-devel
+BuildRequires:	liblxqt-devel >= 0.10.0
 BuildRequires:	libqtxdg-devel >= 0.5.3
 BuildRequires:	xz-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,7 +29,6 @@ lxqt-qtplugin.
 install -d build
 cd build
 %cmake \
-    -DUSE_QT5=ON \
 	../
 
 %{__make}

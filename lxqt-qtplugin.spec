@@ -7,7 +7,7 @@ Summary:	Qt plugin framework for LXQt Desktop Suite
 Summary(pl.UTF-8):	Struktura wtyczek Qt dla pakietu LXQt Desktop Suite
 Name:		lxqt-qtplugin
 Version:	2.3.0
-Release:	1
+Release:	2
 License:	GPLv2 and LGPL-2.1+
 Group:		X11/Applications
 Source0:	https://github.com/lxqt/lxqt-qtplugin/releases/download/%{version}/%{name}-%{version}.tar.xz

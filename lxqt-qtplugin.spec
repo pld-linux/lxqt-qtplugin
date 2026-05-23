@@ -6,21 +6,21 @@
 Summary:	Qt plugin framework for LXQt Desktop Suite
 Summary(pl.UTF-8):	Struktura wtyczek Qt dla pakietu LXQt Desktop Suite
 Name:		lxqt-qtplugin
-Version:	2.3.0
-Release:	2
+Version:	2.4.0
+Release:	1
 License:	GPLv2 and LGPL-2.1+
 Group:		X11/Applications
 Source0:	https://github.com/lxqt/lxqt-qtplugin/releases/download/%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	aa2106968922a96b4205c80f6cbbc542
+# Source0-md5:	679a8472698a88556622c3a4d3c1a524
 URL:		http://www.lxqt.org/
 BuildRequires:	Qt6DBus-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
 BuildRequires:	Qt6Widgets-devel >= %{qtver}
 BuildRequires:	cmake >= 3.18.0
-BuildRequires:	libdbusmenu-lxqt-devel >= 0.3.0
-BuildRequires:	libfm-qt-devel >= 2.3.0
-BuildRequires:	libqtxdg-devel >= 4.3.0
-BuildRequires:	lxqt-build-tools >= 2.3.0
+BuildRequires:	libdbusmenu-lxqt-devel >= 0.4.0
+BuildRequires:	libfm-qt-devel >= 2.4.0
+BuildRequires:	libqtxdg-devel >= 4.4.0
+BuildRequires:	lxqt-build-tools >= 2.4.0
 BuildRequires:	qt6-linguist >= %{qtver}
 BuildRequires:	xz-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
